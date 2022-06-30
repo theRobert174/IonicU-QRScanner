@@ -14,10 +14,10 @@ export class Registro {
     }
 
     private determinarTipo(){
-        const inicioTexto = this.text.substring(0,4);
+        const inicioTexto = this.text.split(':')[0];
         console.log("Tipo", inicioTexto);
          switch(inicioTexto){
-            case 'http':
+            case 'https':
                 this.type = 'http';
                 this.icon = 'globe';
             break;

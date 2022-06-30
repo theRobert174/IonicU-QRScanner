@@ -17,22 +17,22 @@ export class Tab1Page {
   constructor(private barcodeScanner: BarcodeScanner, private dataLocal: DataLocalService) {}
 
   ionViewDidEnter(){
-    console.log('DidEnter');
+    // console.log('DidEnter');
     
   }
 
   ionViewDidLeave(){
-    console.log('DidLeave');
+    // console.log('DidLeave');
     
   }
 
   ionViewWillEnter(){
-    console.log('WillEnter');
+    // console.log('WillEnter');
     this.scan();
   }
 
   ionViewWillLeave(){
-    console.log('WillLeave');
+    // console.log('WillLeave');
     
   }
 
@@ -44,7 +44,8 @@ export class Tab1Page {
       }
      }).catch(err => {
          console.log('Error', err);
-         this.dataLocal.guardarRegistro('QRcode', "https://fernando-herrera.com");
+         //this.dataLocal.guardarRegistro('QRcode', "https://fernando-herrera.com");
+         this.dataLocal.guardarRegistro('QRcode', "geo:29.556522565291516,-97.56178803482075?q=29.556522565291516,-97.56178803482075");
      });
   }
 
