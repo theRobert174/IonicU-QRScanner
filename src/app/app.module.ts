@@ -11,6 +11,8 @@ import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 import { NativeStorage } from '@awesome-cordova-plugins/native-storage/ngx';
 import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
+import { File } from '@awesome-cordova-plugins/file/ngx';
+import { EmailComposer } from '@awesome-cordova-plugins/email-composer/ngx';
 
 import { IonicStorageModule } from '@ionic/storage-angular';
 
@@ -27,7 +29,9 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     BarcodeScanner,
     Camera,
     NativeStorage,
-    InAppBrowser
+    InAppBrowser,
+    File,
+    EmailComposer
   ],
   bootstrap: [AppComponent],
 })
