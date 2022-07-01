@@ -47,6 +47,9 @@ export class DataLocalService {
         break;
 
       case 'geo':
+        console.log(registro.text);
+        const geo = registro.text.split(':')[1].split('?')[0];
+        this.navCtrl.navigateForward(`/tabs/tab2/mapa/${geo}`);
         break;
     }
   }
